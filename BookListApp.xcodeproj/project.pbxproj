@@ -58,16 +58,48 @@
 		8F91337728DC6250005BE218 /* BookListApp */ = {
 			isa = PBXGroup;
 			children = (
+				8FDF2A7D29A38944008428DE /* Model */,
+				8FDF2A7E29A3894F008428DE /* View */,
+				8FDF2A8029A38962008428DE /* Controller */,
+				8FDF2A8129A3896B008428DE /* Supporting files */,
 				8F91337828DC6250005BE218 /* AppDelegate.swift */,
 				8F91337A28DC6250005BE218 /* SceneDelegate.swift */,
-				8F91337E28DC6250005BE218 /* Main.storyboard */,
-				8F91338E28DC62C9005BE218 /* Model.swift */,
-				8F91338C28DC627F005BE218 /* TableViewController.swift */,
 				8F91338128DC6252005BE218 /* Assets.xcassets */,
 				8F91338328DC6252005BE218 /* LaunchScreen.storyboard */,
 				8F91338628DC6252005BE218 /* Info.plist */,
 			);
 			path = BookListApp;
+			sourceTree = "<group>";
+		};
+		8FDF2A7D29A38944008428DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F91338E28DC62C9005BE218 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FDF2A7E29A3894F008428DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F91337E28DC6250005BE218 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FDF2A8029A38962008428DE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F91338C28DC627F005BE218 /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8FDF2A8129A3896B008428DE /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
