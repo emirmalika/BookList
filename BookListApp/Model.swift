@@ -9,7 +9,7 @@ import Foundation
 import UserNotifications
 import UIKit
 
-var bookListItems: [[String: Any]] = [["Name": "Чистый код", "isCompleted": false], ["Name": "Унесенные ветром", "isCompleted": false], ["Name": "Три мушкетера", "isCompleted": false]]
+var bookListItems: [[String: Any]] = []
 
 func addItem(nameItem: String, isCompleted: Bool = false) {
     bookListItems.append(["Name": nameItem, "isCompleted": false])
@@ -45,7 +45,7 @@ func loadData() {
     if let array = UserDefaults.standard.array(forKey: "BookListItemsData") as? [[String: Any]] {
         bookListItems = array 
     } else {
-        bookListItems = [["Name": "Чистый код", "isCompleted": false], ["Name": "Унесенные ветром", "isCompleted": false], ["Name": "Три мушкетера", "isCompleted": false]]
+        bookListItems = []
     }
 }
 
@@ -66,6 +66,5 @@ func setBadge() {
             totalBadgeNumber += 1
         }
     }
-    
     UIApplication.shared.applicationIconBadgeNumber = totalBadgeNumber
 }
